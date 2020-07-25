@@ -1,6 +1,6 @@
 const express = require("express");
 
-const ChampRouter = require('./requests/request.js')
+const ChampRouter = require("./requests/request.js");
 
 const server = express();
 
@@ -9,6 +9,6 @@ server.get("/", (req, res) => {
   res.json({ api: "up" });
 });
 
-server.use('/api/champs', ChampRouter)
+server.use("/api/champs", ChampRouter);
 
 module.exports = server;
