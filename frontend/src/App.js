@@ -31,7 +31,7 @@ function App() {
     champion_name: "",
     champion_pic: "",
   });
-
+  //  function
   const getTop = () => {
     axios.get("http://localhost:5000/api/champs/top").then((res) => {
       setSolo({
