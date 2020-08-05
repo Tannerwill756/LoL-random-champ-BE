@@ -21,7 +21,7 @@
     "knex": "*",
     "knex-cleaner": "*",
     "pg": "*",
-    "sqlite3": "^5.0.0"
+    "sqlite3": "*"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
