@@ -4,9 +4,11 @@ const ChampRouter = require("./requests/request.js");
 
 const server = express();
 
-const corsOptions = {
-  origin: "https://lol-random-champ.vercel.app/",
-};
+// const corsOptions = {
+//   origin: "https://lol-random-champ.vercel.app/",
+// };
+
+server.options("*", cors());
 
 server.use(express.json());
 server.get("/", (req, res) => {
@@ -18,6 +20,6 @@ server.get("/", (req, res) => {
 //   res.header("Access-Control-Allow-Headers", "*");
 // });
 
-server.use("/api/champs", cors(corsOptions), ChampRouter);
+server.use("/api/champs", ChampRouter);
 
 module.exports = server;
