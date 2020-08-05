@@ -20,8 +20,7 @@
     "express": "*",
     "knex": "*",
     "knex-cleaner": "*",
-    "pg": "*",
-    "sqlite3": "*"
+    "pg": "*"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
